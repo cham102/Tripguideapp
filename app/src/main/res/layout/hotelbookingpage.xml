@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/bookpageheader"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/hamburger_menu_bar_icon_eyeball_blue_round_button_isolated_143280653"
+                    android:contentDescription="@string/menu" />
+
+                <!--suppress AndroidUnknownAttribute -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/menu"
+                    android:paddingleft="10dp"
+                    android:text=" welcome travel in Kandy"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    />
+
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="true"
+                android:rowCount="3"
+                android:columnCount="2">
+
+                <!--suppress AndroidUnknownAttribute -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/hotel"
+                    android.layout_columnWeight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCorner="20dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="40dp"
+                        tools:ignore="UseCompoundDrawables"
+                        app:conerradius="12dp">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/istockphoto_104731717_612x612"
+                            android:contentDescription="@string/todo" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Kandy Hills"
+                            android:textColor="@color/purple_200"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Book"
+                            android:textColor="@color/purple_200"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--suppress AndroidUnknownAttribute -->
+                <androidx.cardview.widget.CardView
+                    android:="@+id/transport"
+                    android.layout_columnWeight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCorner="16dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="40dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/b"
+                            android:contentDescription="@string/todo1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="jewing Kandy"
+                            android:textColor="@color/purple_200"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="book"
+                            android:textColor="@color/purple_200"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--suppress AndroidUnknownAttribute -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profile"
+                    android.layout_columnWeight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCorner="16dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="40dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/a"
+                            android:contentDescription="@string/propic"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Amaya"
+                            android:textColor="@color/purple_200"
+                            android:textSize="18sp" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Book"
+                            android:textColor="@color/purple_200"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--suppress AndroidUnknownAttribute -->
+                <androidx.cardview.widget.CardView
+                    android.layout_columnWeight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="12dp"
+                    app:cardCorner="16dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="40dp"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/d"
+                            android:contentDescription="@string/todopicture"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="kandy villa"
+                            android:textColor="@color/purple_200"
+                            android:textSize="18sp" />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="Book"
+                            android:textColor="@color/purple_200"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+            <RelativeLayout
+                style="@style/Theme.Myapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/botttomcard"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="12dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:text="@string/welcome_to_travel_sri_lanka"
+                    tools:ignore="RtlSymmetry" />
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
